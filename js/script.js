@@ -29,7 +29,6 @@ const titleClickHandler = function (event) {
   targetArticle.classList.add('active');
 }
 
-
 const optArticleSelector = '.post',
   optTitleSelector = '.post-title',
   optTitleListSelector = '.titles',
@@ -77,7 +76,6 @@ function generateTitleLinks(customSelector = '') {
 }
 generateTitleLinks();
 
-
 function calculateTagsParams(tags) {
   const params = {
     min: 1,
@@ -100,7 +98,6 @@ function calculateTagsParams(tags) {
   return params;
 }
 
-
 function calculateTagClass(count, params) {
   const normalizedCount = count - params.min;
   const normalizedMax = params.max - params.min;
@@ -108,8 +105,6 @@ function calculateTagClass(count, params) {
   const classNumber = Math.floor(percentage * (optCloudClassCount - 1) + 1);
   return optCloudClassPrefix + classNumber;
 }
-
-
 
 function generateTags() {
 
@@ -186,7 +181,6 @@ function generateTags() {
 
 generateTags();
 
-
 function tagClickHandler(event) {
   console.log(tagClickHandler);
 
@@ -248,8 +242,6 @@ function addClickListenersToTags() {
 
 addClickListenersToTags();
 
-
-
 function calculateAuthorsParams(authors) {
   const params = {
     min: 1,
@@ -266,7 +258,6 @@ function calculateAuthorsParams(authors) {
   return params;
 }
 
-
 function calculateAuthorClass(count, params) {
   const normalizedCount = count - params.min;
   const normalizedMax = params.max - params.min;
@@ -274,7 +265,6 @@ function calculateAuthorClass(count, params) {
   const classNumber = Math.floor(percentage * (optAuthorClassCount - 1) + 1);
   return optAuthorClassPrefix + classNumber;
 }
-
 
 function generateAuthors() {
   console.log(generateAuthors);
@@ -343,7 +333,6 @@ function generateAuthors() {
 }
 generateAuthors();
 
-
 const authorClickHandler = function (event) {
   event.preventDefault();
   const clickedElement = this;
@@ -360,7 +349,6 @@ const authorClickHandler = function (event) {
   }
   generateTitleLinks('[data-author="' + author + '"]');
 }
-
 
 const addClickListenersToAuthors = function () {
   console.log(addClickListenersToAuthors);
