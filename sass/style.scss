@@ -93,6 +93,12 @@ body {
 
 /* Authors */
 
+.authors {
+  li {
+    margin-bottom: 12px;
+  }
+}
+/* Authors */
 .authors li {
   margin-bottom: 12px;
   display: inline-block;
@@ -125,12 +131,12 @@ body {
 }
 
 /* Post */
+
 .post {
   display: none;
-}
-
-.post.active {
-  display: block;
+  &.active {
+    display: block;
+  }
 }
 
 .post-author {
@@ -139,15 +145,13 @@ body {
 
 .post-tags {
   display: flex;
-}
+  p {
+    margin: 0 10px 0 0;
+  }
+ }
 
-.post-tags p {
-  margin: 0 10px 0 0;
-}
-/* tags*/
-.tags li {
+ .tags li {
   display: inline-block;
-  margin: 0;
   
 }
 .tag-size-1 {
@@ -155,19 +159,19 @@ body {
   color: purple;
 }
 .tag-size-2 {
-  font-size: 15px;
-  color: green;
+  font-size: 25px;
+  color: yellow;
 }
 .tag-size-3 {
-  font-size: 20px;
+  font-size: 35px;
   color: red
 }
 .tag-size-4 {
-  font-size: 25px;
+  font-size: 45px;
   color: purple;
 }
 .tag-size-5 {
-  font-size: 30px;
+  font-size: 55px;
   color: green;
 }
 .list {
