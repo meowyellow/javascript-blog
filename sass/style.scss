@@ -93,19 +93,44 @@ body {
 
 /* Authors */
 
-.authors {
-  li {
-    margin-bottom: 12px;
-  }
+.authors li {
+  margin-bottom: 12px;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.author-size-1 {
+  font-size: 10px;
+  color: orange;
+}
+
+.author-size-2 {
+  font-size: 15px;
+  color: black;
+}
+
+.author-size-3 {
+  font-size: 30px;
+  color: pink;
+}
+
+.author-size-4 {
+  font-size: 40px;
+  color: red;
+}
+
+.author-size-5 {
+  font-size: 50px;
+  color: grey;
 }
 
 /* Post */
-
 .post {
   display: none;
-  &.active {
-    display: block;
-  }
+}
+
+.post.active {
+  display: block;
 }
 
 .post-author {
@@ -114,9 +139,40 @@ body {
 
 .post-tags {
   display: flex;
-  p {
-    margin: 0 10px 0 0;
-  }
- }
+}
 
- 
+.post-tags p {
+  margin: 0 10px 0 0;
+}
+/* tags*/
+.tags li {
+  display: inline-block;
+  margin: 0;
+  
+}
+.tag-size-1 {
+  font-size: 10px;
+  color: purple;
+}
+.tag-size-2 {
+  font-size: 15px;
+  color: green;
+}
+.tag-size-3 {
+  font-size: 20px;
+  color: red
+}
+.tag-size-4 {
+  font-size: 25px;
+  color: purple;
+}
+.tag-size-5 {
+  font-size: 30px;
+  color: green;
+}
+.list {
+  list-style-type: none;
+    a {
+      text-decoration: none;
+    }
+}

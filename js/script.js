@@ -333,6 +333,7 @@ function generateAuthors() {
 }
 generateAuthors();
 
+/* Dodajemy akcję po kliknięciu w author */
 const authorClickHandler = function (event) {
   event.preventDefault();
   const clickedElement = this;
@@ -349,6 +350,7 @@ const authorClickHandler = function (event) {
   }
   generateTitleLinks('[data-author="' + author + '"]');
 }
+
 
 const addClickListenersToAuthors = function () {
   console.log(addClickListenersToAuthors);
