@@ -141,11 +141,11 @@ function generateTags() {
     for (let tag of articleTagsArray) {
 
       /* generate HTML of the link */
-      const linkHTML = '<li><a href="#tag-' + tag +'">' + tag + '</a></li>';
-      console.log('link HTML of the Link');
-
+      const tagLinkData = { id: tag, title: tag};
+      const tagLink = templates.tagLink(tagLinkData);
+      html=html+tagLink;
       /* add generated code to html variable */
-      html += linkHTML + ' ';
+     
 
       /* [NEW] check if this link is NOT already in allTags */
       if (!allTags[tag]) {
